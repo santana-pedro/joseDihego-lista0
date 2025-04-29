@@ -17,8 +17,8 @@ typedef struct Lista{
 }Lista;
 
 int main(){
-    FILE *fp_in = fopen("C:/Users/pedro/Desktop/IFBA/jose dihego/Lista 0/L0Q2/L0Q2_in.txt", "r");
-    FILE *fp_out = fopen("C:/Users/pedro/Desktop/IFBA/jose dihego/Lista 0/L0Q2/L0Q2_out.txt", "w");
+    FILE *fp_in = fopen("L0Q2.in", "r");
+    FILE *fp_out = fopen("L0Q2.out", "w");
     int contador = 0, indiceGeral = 0;
     char listaUsuario[MAX];
     char *token;

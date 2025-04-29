@@ -8,8 +8,8 @@
 //Pedro Santana e Victor Gabriel
 
 int main(){
-    FILE *fp_in = fopen("C:/Users/pedro/Desktop/IFBA/jose dihego/Lista 0/L0Q1/L0Q1_in.txt", "r");
-    FILE *fp_out = fopen("C:/Users/pedro/Desktop/IFBA/jose dihego/Lista 0/L0Q1/L0Q1_out.txt", "w");
+    FILE *fp_in = fopen("L0Q1.in", "r");
+    FILE *fp_out = fopen("L0Q1.out", "w");
     char points[TAM];
     int indicePoints = 0;
     double x[TAM], y[TAM], distanciaPontos[TAM], distance = 0, shortcut, distanciaInicio[TAM];
