@@ -72,7 +72,6 @@ int main(){
         fprintf(fp_out, "distance %.2f shortcut %.2f", distance, shortcut);
         fprintf(fp_out, "\n");
     }
-    
     fclose(fp_in);
     fclose(fp_out);
     return EXIT_SUCCESS;

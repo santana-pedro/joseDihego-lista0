@@ -25,7 +25,7 @@ int main(){
     Lista lista[MAX];
 
     if(fp_in == NULL || fp_out == NULL){
-        printf("Files cannot be oppened");
+        perror("Error opening file");
         return EXIT_FAILURE;
     }
 
@@ -190,7 +190,10 @@ int main(){
         fprintf(fp_out, "p:");
         for(int cont = 0; cont < indiceGeral; cont++){
             if(lista[cont].tipo == 'p'){
-                fprintf(fp_out, "(%.1f,%.1f) ", lista[cont].x, lista[cont].y);
+                fprintf(fp_out, "(%.1f,%.1f)", lista[cont].x, lista[cont].y);
+                if(cont + 1 < indiceGeral){
+                    fprintf(fp_out, " ");
+                }
             }
         }
         fprintf(fp_out, "\n");
