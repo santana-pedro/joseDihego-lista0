@@ -188,12 +188,13 @@ int main(){
         }
         //POINT
         fprintf(fp_out, "p:");
+        int printed = 0;
         for(int cont = 0; cont < indiceGeral; cont++){
             if(lista[cont].tipo == 'p'){
-                fprintf(fp_out, "(%.1f,%.1f)", lista[cont].x, lista[cont].y);
-                if(cont + 1 < indiceGeral){
+                if(printed > 0)
                     fprintf(fp_out, " ");
-                }
+                fprintf(fp_out, "(%.1f,%.1f)", lista[cont].x, lista[cont].y);
+                printed++;
             }
         }
         fprintf(fp_out, "\n");
